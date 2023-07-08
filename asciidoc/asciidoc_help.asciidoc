@@ -21,5 +21,8 @@ An unordered list:
 ## More?
 
 * table
-* links
+* internal link: link:index.asciidoc[Index]
+* external: link:https://www.nu.nl[visible link text]
 * ...
+
+Here is a hidden answer: [hiddenAnswer]#this is white# (did you see it?)
