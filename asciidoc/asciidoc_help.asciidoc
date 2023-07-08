@@ -1,14 +1,15 @@
-# Title
+= Title
 
 Hello *bold* tamara.
 
 This is _italic_.
 
-## Subtitle
+== Subtitle
 
-A list:
+An ordered list:
 
 . ha
+.. sub-haha
 . hi
 . hu
 
@@ -18,7 +19,7 @@ An unordered list:
 * ba
 * baz
 
-## More?
+== More?
 
 * table
 * internal link: link:index.asciidoc[Index]
