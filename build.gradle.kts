@@ -1,6 +1,5 @@
 val sourceDirectory = project.file("asciidoc")
 val htmlBuildOutput = project.file("${project.buildDir}/output/html")
-val githubTargetDirectory = File(project.projectDir, "docs")
 
 repositories {
     mavenCentral()
@@ -36,13 +35,14 @@ val copyResourcesTask = tasks.register<Copy>("copyResources") {
 tasks.build {
     dependsOn(copyResourcesTask)
     dependsOn("asciidoctor")
+    dependsOn("copyLocalDocs")
 }
 
 tasks.register<GradleBuild>("deploy") {
     tasks = listOf("copyLocalDocs")
 }
 
-tasks.register<Copy>("copyLocalDocs") {
+val copyLocalDocs = tasks.register<Copy>("copyLocalDocs") {
     from(htmlBuildOutput)
-    into(githubTargetDirectory)
+    into(File(project.projectDir, "docs"))
 }
