@@ -1,0 +1,20 @@
+/*.iml
+/.idea/
+
+/.gradle/
+/build/
+/buildSrc/.gradle/
+/buildSrc/build/
+
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+self_reflection/*.pdf
+my_papers/*.pdf
+
+.DS_Store
+
+# symlinked folder
+local_target/
