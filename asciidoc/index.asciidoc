@@ -1,5 +1,5 @@
 
 = Bedrijfskunde
 
-== marketing
-
+== Marketing
+== Ondernemerschap
