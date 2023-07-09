@@ -1,5 +1,9 @@
 = Title
 
+link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Help]
+
+== Formatting
+
 Hello *bold* tamara.
 
 This is _italic_.
@@ -22,5 +26,8 @@ An unordered list:
 == More?
 
 * table
-* links
+* internal link: link:index.asciidoc[Index]
+* external: link:https://www.nu.nl[visible link text]
 * ...
+
+Here is a hidden answer: [hiddenAnswer]#this is white# (did you see it?)
